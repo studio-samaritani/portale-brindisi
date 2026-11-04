@@ -1,0 +1,21 @@
+{
+  "name": "IIS Remo Brindisi – App della scuola",
+  "short_name": "Brindisi",
+  "description": "Le app dell'IIS \"Remo Brindisi\" di Comacchio – Lido degli Estensi: Bar Didattico, Gestione FSL, Attestati, Gestione Sicurezza.",
+  "lang": "it",
+  "dir": "ltr",
+  "id": "./",
+  "start_url": "./?origine=app",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#1d3a5f",
+  "categories": ["education", "productivity"],
+  "icons": [
+    { "src": "icone/icona-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icone/icona-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icone/icona-maschera-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "icone/icona-maschera-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,20 @@
+# Portale IIS "Remo Brindisi" – impostazioni per il server Apache (Aruba)
+# Sempre in HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Tipi di file corretti (necessari per l'installazione dell'app e per la verifica di Google Play)
+AddType application/manifest+json .webmanifest
+AddType application/json .json
+
+# Il file di verifica di Google deve essere raggiungibile
+<IfModule mod_headers.c>
+  <Files "assetlinks.json">
+    Header set Access-Control-Allow-Origin "*"
+  </Files>
+  # questi file devono essere sempre controllati: così gli aggiornamenti arrivano subito
+  <FilesMatch "^(sw\.js|config\.js|manifest\.webmanifest)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>

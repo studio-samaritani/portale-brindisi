@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IIS "Remo Brindisi" – App della scuola</title>
+<meta name="description" content="Le app dell'IIS Remo Brindisi di Comacchio – Lido degli Estensi: Bar Didattico, Gestione FSL, Attestati, Gestione Sicurezza.">
+<meta name="theme-color" content="#1d3a5f">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="icone/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="icone/favicon-48.png">
+<link rel="apple-touch-icon" href="icone/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Brindisi">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="stylesheet" href="stile.css">
+</head>
+<body>
+<header class="testa">
+  <img class="logo" src="icone/logo.png" alt="Logo IIS Remo Brindisi" width="56" height="56">
+  <div>
+    <h1 id="nomeScuola">IIS "Remo Brindisi"</h1>
+    <p id="sottotitolo">Comacchio – Lido degli Estensi (FE)</p>
+  </div>
+</header>
+
+<main>
+  <div id="installa" class="installa" hidden>
+    <div><b>Installa l'app sul telefono</b><span id="installaTesto">Avrai l'icona della scuola nella schermata Home.</span></div>
+    <button id="installaBtn" type="button">Installa</button>
+  </div>
+
+  <h2>Le app della scuola</h2>
+  <div id="griglia" class="griglia"></div>
+
+  <h2 id="titoloLink">Collegamenti utili</h2>
+  <div id="collegamenti"></div>
+
+  <p class="nota">Si entra con l'<b>account Google della scuola</b>. Ogni app mostra solo ciò che il tuo ruolo consente.</p>
+</main>
+
+<footer>
+  <a href="privacy.html">Privacy</a> · <a href="aiuto.html">Aiuto</a> · <span id="versione"></span>
+</footer>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

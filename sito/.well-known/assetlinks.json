@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "it.edu.istitutoremobrindisi.app",
+      "sha256_cert_fingerprints": [
+        "SOSTITUIRE_CON_IMPRONTA_CHIAVE_DI_FIRMA_DI_GOOGLE_PLAY",
+        "SOSTITUIRE_CON_IMPRONTA_CHIAVE_DI_CARICAMENTO"
+      ]
+    }
+  }
+]
