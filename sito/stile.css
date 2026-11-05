@@ -25,6 +25,7 @@ h2 { font-size: 13px; color: var(--grigio); text-transform: uppercase; letter-sp
 .installa { display: flex; gap: 12px; align-items: center; justify-content: space-between; background: #fff4c2; border: 1px solid #e0b100; border-radius: 12px; padding: 12px 14px; margin-top: 16px; }
 .installa b { display: block; }
 .installa span { font-size: 13px; color: #5b4a00; }
+.installa .chiudi { background: none; border: none; color: #7a6400; font-size: 18px; padding: 4px 6px; cursor: pointer; flex: none; }
 .installa button, .btn { background: var(--blu); color: #fff; border: none; border-radius: 10px; padding: 10px 16px; font-size: 14px; cursor: pointer; flex: none; }
 .nota { font-size: 12.5px; color: var(--grigio); text-align: center; margin-top: 22px; }
 footer { text-align: center; font-size: 12px; color: var(--grigio); padding: 14px 10px calc(14px + env(safe-area-inset-bottom)); }

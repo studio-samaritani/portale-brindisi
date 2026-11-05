@@ -1,6 +1,6 @@
 /* Portale IIS "Remo Brindisi" – funzionamento senza rete.
    Strategia: prima la rete (così le modifiche a config.js arrivano subito), se manca si usa la copia salvata. */
-var CACHE = 'portale-brindisi-v1';
+var CACHE = 'portale-brindisi-v2';
 var FILE = ['./', 'index.html', 'stile.css', 'app.js', 'config.js', 'offline.html', 'aiuto.html', 'privacy.html', 'manifest.webmanifest',
   'icone/logo.png', 'icone/icona-192.png', 'icone/icona-512.png', 'icone/favicon-32.png'];
 

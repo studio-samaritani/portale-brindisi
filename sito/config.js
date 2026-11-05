@@ -30,10 +30,10 @@ var PORTALE = {
   // Collegamenti utili (pagine esterne). Con url: '' non vengono mostrati.
   collegamenti: [
     { nome: 'Sito della scuola', icona: '🌐', url: 'https://www.istitutoremobrindisi.edu.it/' },
-    { nome: 'Circolari', icona: '📰', url: 'https://www.istitutoremobrindisi.edu.it/circolare/' },
+    { nome: 'Circolari (bacheca Argo)', icona: '📰', url: 'https://www.portaleargo.it/' },
     { nome: 'Registro elettronico', icona: '📘', url: '' },
     { nome: 'Pago In Rete', icona: '💳', url: 'https://www.istruzione.it/pagoinrete/' }
   ],
 
-  versione: 3
+  versione: 4
 };

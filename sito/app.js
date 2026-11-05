@@ -24,20 +24,31 @@
   // ---- funzionamento senza rete e installazione ----
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(function () { });
 
-  var installata = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone || document.referrer.indexOf('android-app://') === 0;
+  // L'app installata si apre con ?origine=app (start_url del manifest) o in una finestra senza barra del browser.
+  function ricorda(k) { try { localStorage.setItem(k, '1'); } catch (e) { } }
+  function ricordato(k) { try { return localStorage.getItem(k) === '1'; } catch (e) { return false; } }
+  var daIcona = /[?&]origine=app/.test(location.search);
+  var inFinestraApp = ['standalone', 'fullscreen', 'minimal-ui', 'window-controls-overlay'].some(function (m) {
+    return window.matchMedia && window.matchMedia('(display-mode: ' + m + ')').matches;
+  }) || navigator.standalone === true || document.referrer.indexOf('android-app://') === 0;
+  if (daIcona || inFinestraApp) ricorda('portale-installata');   // su Android vale anche per Chrome (stesso sito)
+  var nonMostrare = daIcona || inFinestraApp || ricordato('portale-installata') || ricordato('portale-installa-chiuso');
+
   var box = document.getElementById('installa'), btn = document.getElementById('installaBtn'), evento = null;
+  function nascondi() { box.hidden = true; }
   window.addEventListener('beforeinstallprompt', function (e) {
     e.preventDefault(); evento = e;
-    if (!installata) box.hidden = false;
+    if (!nonMostrare) box.hidden = false;
   });
   btn.addEventListener('click', function () {
-    if (evento) { evento.prompt(); evento.userChoice.then(function () { box.hidden = true; evento = null; }); }
+    if (evento) { evento.prompt(); evento.userChoice.then(function (r) { if (r && r.outcome === 'accepted') ricorda('portale-installata'); nascondi(); evento = null; }); }
     else location.href = 'aiuto.html#installare';
   });
+  document.getElementById('installaChiudi').addEventListener('click', function () { ricorda('portale-installa-chiuso'); nascondi(); });
   var ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
-  if (ios && !installata) {
+  if (ios && !nonMostrare) {
     document.getElementById('installaTesto').textContent = 'Su iPhone: tocca Condividi e poi «Aggiungi alla schermata Home».';
     btn.textContent = 'Come fare'; box.hidden = false;
   }
-  window.addEventListener('appinstalled', function () { box.hidden = true; });
+  window.addEventListener('appinstalled', function () { ricorda('portale-installata'); nascondi(); });
 })();
