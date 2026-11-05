@@ -22,9 +22,9 @@ var PORTALE = {
   // Le app della scuola (script Google). "per" è solo un'indicazione: ogni app controlla da sola chi può entrare.
   app: [
     { id: 'bar', nome: 'Bar Didattico', descrizione: 'Saldo, ricariche e tessera del bar', icona: '☕', per: 'Studenti e personale', url: 'https://script.google.com/a/macros/remobrindisi.istruzioneer.it/s/AKfycbzTxsL_lS1M7QTH1mFDZdJMXrfb8bykUQyNjLKod3bRajmILDB394IV1Sy7mOV7Z814/exec' },
-    { id: 'fsl', nome: 'Gestionale FSL', descrizione: 'Formazione scuola-lavoro', icona: '🎓', per: 'Studenti e docenti', url: 'https://script.google.com/a/macros/remobrindisi.istruzioneer.it/s/AKfycbxNTFBXsf3aWcFirzHuiqW4BkRoiWeyq-sX6Dh99e_5G9_VYEDqthO-RrASdfHkVvlV/exec' },
-    { id: 'attestati', nome: 'Attestati sicurezza', descrizione: 'Archivio attestati sicurezza', icona: '📜', per: 'Personale', url: 'https://script.google.com/a/macros/remobrindisi.istruzioneer.it/s/AKfycbxKsXGc4Q31vT4oDF9JVfRQw1G9GsQQnrk1h_gTPecebb02IZlpw0jFV_QzKRBXFap7yg/exec' },
-    { id: 'sicurezza', nome: 'Gestionale sicurezza', descrizione: 'Sicurezza81 – documenti e scadenze', icona: '🦺', per: 'Personale', url: 'https://script.google.com/a/macros/remobrindisi.istruzioneer.it/s/AKfycbwQ0E5TxBhHjA0uDiNFoN2LfpOr4025E7QE_YOCgB0ky8YRRxnQDYoBKFz0Pkp9eiq6/exec' }
+    { id: 'fsl', nome: 'Formazione Scuola Lavoro', descrizione: 'Gestionale dei percorsi FSL', icona: '🎓', per: 'Studenti e docenti', url: 'https://script.google.com/a/macros/remobrindisi.istruzioneer.it/s/AKfycbxNTFBXsf3aWcFirzHuiqW4BkRoiWeyq-sX6Dh99e_5G9_VYEDqthO-RrASdfHkVvlV/exec' },
+    { id: 'attestati', nome: 'Attestati', descrizione: 'Archivio attestati sicurezza', icona: '📜', per: 'Personale', url: 'https://script.google.com/a/macros/remobrindisi.istruzioneer.it/s/AKfycbxKsXGc4Q31vT4oDF9JVfRQw1G9GsQQnrk1h_gTPecebb02IZlpw0jFV_QzKRBXFap7yg/exec' },
+    { id: 'sicurezza', nome: 'Sicurezza', descrizione: 'Sicurezza81 – documenti e scadenze', icona: '🦺', per: 'Personale', url: 'https://script.google.com/a/macros/remobrindisi.istruzioneer.it/s/AKfycbwQ0E5TxBhHjA0uDiNFoN2LfpOr4025E7QE_YOCgB0ky8YRRxnQDYoBKFz0Pkp9eiq6/exec' }
   ],
 
   // Collegamenti utili (pagine esterne). Con url: '' non vengono mostrati.
@@ -35,5 +35,5 @@ var PORTALE = {
     { nome: 'Pago In Rete', icona: '💳', url: 'https://www.istruzione.it/pagoinrete/' }
   ],
 
-  versione: 2
+  versione: 3
 };
