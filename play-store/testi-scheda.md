@@ -16,9 +16,9 @@ L'app ufficiale dell'Istituto d'Istruzione Superiore Statale "Remo Brindisi" di 
 
 Con un tocco si aprono:
 • Bar Didattico – il conto prepagato del bar della scuola: saldo, movimenti, ricariche con pagoPA (Pago In Rete), tessera con QR per pagare senza contanti, PIN di emergenza, tesserino da stampare.
-• Gestione FSL – le attività di formazione scuola-lavoro.
+• Formazione Scuola Lavoro – le attività di formazione scuola-lavoro.
 • Attestati – l'archivio degli attestati di sicurezza del personale.
-• Gestione Sicurezza – i documenti e le scadenze della sicurezza a scuola.
+• Sicurezza – i documenti e le scadenze della sicurezza a scuola.
 Altri servizi verranno aggiunti nel tempo, senza bisogno di aggiornare l'app.
 
 Ci sono anche i collegamenti utili: il sito della scuola, le circolari e Pago In Rete.

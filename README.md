@@ -9,3 +9,10 @@ Mini-app web installabile (PWA) che raccoglie i collegamenti alle app della scuo
 Pacchetto Android previsto: `it.edu.istitutoremobrindisi.app`.
 
 Prove fatte (Chrome, telefono simulato): manifest valido e app installabile (nessun errore di installabilità secondo Chrome), service worker attivo, funzionamento senza rete con pagina di riserva, pagine Aiuto e Privacy.
+
+## Pubblicazione attuale
+Il portale è pubblicato con **GitHub Pages**: <https://studio-samaritani.github.io/portale-brindisi/>.
+A ogni modifica del ramo `main` il workflow «Pubblica il portale» (`.github/workflows/pubblica.yml`) rimette online la cartella `sito`.
+Per ora si installa **dal browser**, senza Google Play: «Installa» su Android e computer, «Aggiungi alla schermata Home» su iPhone.
+Google Play resta facoltativo (vedi `GUIDA-PUBBLICAZIONE.md`). Per pubblicarla su Play serve `assetlinks.json` nella radice del dominio:
+o un dominio proprio che punta a GitHub (consigliato), o il repository `studio-samaritani.github.io`.
