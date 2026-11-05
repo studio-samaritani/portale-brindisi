@@ -16,3 +16,7 @@ A ogni modifica del ramo `main` il workflow «Pubblica il portale» (`.github/wo
 Per ora si installa **dal browser**, senza Google Play: «Installa» su Android e computer, «Aggiungi alla schermata Home» su iPhone.
 Google Play resta facoltativo (vedi `GUIDA-PUBBLICAZIONE.md`). Per pubblicarla su Play serve `assetlinks.json` nella radice del dominio:
 o un dominio proprio che punta a GitHub (consigliato), o il repository `studio-samaritani.github.io`.
+
+## Locandina
+`materiale/Locandina-App-della-scuola.pdf`: foglio A4 da affiggere, con il QR del portale e le istruzioni di installazione per Android e iPhone.
+Si rigenera stampando in PDF `materiale/locandina.html` (A4, con sfondi).
