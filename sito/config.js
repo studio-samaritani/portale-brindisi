@@ -35,5 +35,5 @@ var PORTALE = {
     { nome: 'Pago In Rete', icona: '💳', url: 'https://www.istruzione.it/pagoinrete/' }
   ],
 
-  versione: 4
+  versione: 5
 };
